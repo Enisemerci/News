@@ -10,11 +10,12 @@ class NewsPage extends StatefulWidget {
   _NewsPageState createState() => _NewsPageState();
 }
 
+//science, sport, entertaiment, technology(egitim),business, health
 class _NewsPageState extends State<NewsPage> {
   Future<List<Map<String, dynamic>>> fetchNews() async {
     final apiKey = 'a1987496ddf64d83b80b1824027d7f07';
     final apiUrl =
-        'https://newsapi.org/v2/everything?q=tesla&from=2023-11-19&sortBy=publishedAt&apiKey=$apiKey';
+        'https://newsapi.org/v2/top-headlines?country=tr&category=science&apiKey=$apiKey';
 
     final response = await http.get(Uri.parse(apiUrl));
 

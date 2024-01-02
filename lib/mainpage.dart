@@ -82,12 +82,13 @@ class mainPage extends StatelessWidget {
             Row(
               children: [
                 Expanded(child: cards(context, 'images/spor.jpeg', 'Spor')),
-                Expanded(child: cards(context, 'images/sanat.jpeg', 'Sanat')),
+                Expanded(child: cards(context, 'images/science.jpeg', 'Bilim')),
               ],
             ),
             Row(
               children: [
-                Expanded(child: cards(context, 'images/eğitim.jpeg', 'Eğitim')),
+                Expanded(
+                    child: cards(context, 'images/eğitim.jpeg', 'Teknoloji')),
                 Expanded(
                     child: cards(context, 'images/ekonomi.jpeg', 'Ekonomi')),
               ],
@@ -95,7 +96,8 @@ class mainPage extends StatelessWidget {
             Row(
               children: [
                 Expanded(
-                    child: cards(context, 'images/burç.jpeg', 'Astroloji')),
+                    child: cards(
+                        context, 'images/rammstein-crowd.jpg', 'Eğlence')),
                 Expanded(child: cards(context, 'images/sağlık.jpeg', 'Sağlık')),
               ],
             ),
